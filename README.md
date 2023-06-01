@@ -1,2 +1,2 @@
-# aldencutler.github.io
-personal website
+# personal-website
+Personal Website
