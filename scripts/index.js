@@ -121,6 +121,8 @@ if (mobileCheck()) {
         s.style.textAlign = 'center';
     });
 
+    document.querySelector('.school').style.marginTop = '0';   
+
     document.querySelector('.contact-me').style.textAlign = 'center';
 
 }
