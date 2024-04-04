@@ -127,12 +127,11 @@ nav {
     flex-direction: column;
     align-items: left;
     padding: 10px 20px;
+    width: 100%;
 }
 
 .skill {
-    display: grid;
-    grid-template-columns: 1em 1em;
-    gap: 1rem;
+    display: flex;
     padding: 1rem;
     margin: 1rem;
     border-radius: 5px;
@@ -143,6 +142,7 @@ nav {
 .skill p {
     margin: 0;
     padding: 0;
+    margin-right: 0.5rem;
 }
 
 .bar {
@@ -150,11 +150,16 @@ nav {
     background-color: var(--bg-accent);
     border-radius: 5px;
     width: 10rem;
-    margin-left: 3.5rem;
+    margin-left: auto;
+    margin-top: 0.25rem;
+    justify-content: flex-end;
+    align-items: center;
+    
 }
 
 .progress {
-    height: 1rem;
+    line-height: 0.5rem;
+    height: inherit;
     background-color: var(--text-accent);
     border-radius: 5px;
     width: 0;
