@@ -80,7 +80,7 @@ if (mobileCheck()) {
     // center about me section
     const about = document.querySelector('.about-me');
     about.style.textAlign = 'center';
-    // about.style.width = '70%';
+    about.style.width = '70%';
     about.style.margin = 'auto';
     about.style.paddingTop = '3rem';
 
@@ -108,7 +108,7 @@ if (mobileCheck()) {
         g.style.display = 'grid';
         g.style.gridTemplateColumns = 'repeat(2, 1fr)';
         g.style.gridGap = '1rem';
-        // g.style.width = '50%';
+        g.style.width = '50%';
         g.style.margin = 'auto';
         g.style.padding = '1rem 0';
     });
