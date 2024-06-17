@@ -103,12 +103,20 @@ if (mobileCheck()) {
     skills.style.padding = '1rem 0';
     skills.style.paddingTop = '3rem';
 
+    const projects = document.querySelector('.projects');
+    projects.style.width = '75%';
+    projects.style.margin = 'auto';
+
+    const education = document.querySelector('.education');
+    education.style.width = '75%';
+    education.style.margin = 'auto';
+
     const grid = document.querySelectorAll('.grid');
     grid.forEach((g) => {
         g.style.display = 'grid';
         g.style.gridTemplateColumns = 'repeat(2, 1fr)';
         g.style.gridGap = '1rem';
-        g.style.width = '50%';
+        // g.style.width = '50%';
         g.style.margin = 'auto';
         g.style.padding = '1rem 0';
     });

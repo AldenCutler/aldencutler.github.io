@@ -35,6 +35,8 @@ body {
     font-family: 'Ubuntu', sans-serif;
     color: var(--text);
     user-select: none;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 /* Navigation Bar */
