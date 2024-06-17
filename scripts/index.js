@@ -106,6 +106,7 @@ if (mobileCheck()) {
     const projects = document.querySelector('.projects');
     projects.style.width = '75%';
     projects.style.margin = 'auto';
+    projects.style.textAlign = 'center';
 
     const education = document.querySelector('.education');
     education.style.width = '75%';

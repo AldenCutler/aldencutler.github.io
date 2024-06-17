@@ -199,9 +199,10 @@ nav {
     margin-bottom: 3rem;
 }
 
-/* .section-header {
-    text-align: center;
-} */
+.project h3 a {
+    color: var(--text);
+    text-decoration: underline;
+}
 
 .education {
     display: flex;
