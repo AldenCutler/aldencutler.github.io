@@ -16,10 +16,11 @@
       <ul class="nav-links">
         <li><a href="/">Home</a></li>
         <li><a href="#about">About Me</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact Me</a></li>
+        <li><a href="#awards">Awards</a></li>
         <li><a href="./assets/resume.pdf" target="_blank">Resume</a></li>
       </ul>
     </nav>
@@ -35,19 +36,20 @@
         <h1 class="name">Alden <strong> Cutler</strong></h1>
         <h3 class="tagline">Student and Developer</h3>
       </div>
-      <hr />
+      <hr class="section-separator" />
 
       <!-- About Me -->
       <div class="about-me" id="about">
         <h2 class="highlight">About Me</h2>
-        <p class="text">
+        <p class="about-text">
           I'm currently a student at Worcester Polytechnic Institute studying
-          Computer Science. I'm starting my junior year in the fall and will be
-          graduating in 2026. I have experience in C, C++, Java, Python, Jupyter
-          Notebooks, and HTML/CSS/JS/React, as well as frameworks and tools such
-          as Flask, Numpy, Pandas, and Node.js.
+          Computer Science. I'm starting my junior year in the fall, pursuing a
+          combined Bachelor's and Master's Degree, and will be graduating in May
+          of 2026. I have experience in C, C++, Java, Python, Jupyter Notebooks,
+          and HTML/CSS/JS/React, as well as frameworks and tools such as Flask,
+          Numpy, Pandas, and Node.js.
         </p>
-        <p class="text">
+        <p class="about-text">
           Outside of being a student, I live in Seattle, Washington and enjoy
           soccer, hiking, skiing, playing video games, and listening to music. I
           also play semi-professional soccer in the UPSL for New England Combine
@@ -65,7 +67,44 @@
           ></a>
         </div>
       </div>
-      <hr />
+      <hr class="section-separator" />
+
+      <!-- Experience -->
+      <div class="experience" id="experience">
+        <h2 class="highlight">Experience</h2>
+        <div class="grid">
+          <div class="job">
+            <h3>Cybersecurity Intern</h3>
+            <p class="company">Boeing</p>
+            <p class="dates">March 2022 - May 2022</p>
+            <ul class="list">
+              <li class="list-item">
+                ✓ Developed monitoring software responsible for improved event
+                detection and response on the aircraft's computer system
+              </li>
+              <li class="list-item">
+                ✓ Used aircraft's virtual machine to test effectiveness of the
+                new software
+              </li>
+            </ul>
+          </div>
+          <div class="job">
+            <h3>Lice Removal Technician</h3>
+            <p class="company">Lice Knowing You</p>
+            <p class="dates">June 2023 - August 2023</p>
+            <ul class="list">
+              <li class="list-item">
+                ✓ Removed lice from clients' hair using a variety of tools and
+                techniques
+              </li>
+              <li class="list-item">
+                ✓ Educated clients on how to prevent future lice infestations
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr class="section-separator" />
 
       <!-- Skills -->
       <div class="skills" id="skills">
@@ -105,18 +144,6 @@
             <p>Python</p>
             <div class="bar">
               <div class="progress">intermediate/advanced</div>
-            </div>
-          </div>
-          <div class="skill">
-            <p>HTML</p>
-            <div class="bar">
-              <div class="progress">advanced</div>
-            </div>
-          </div>
-          <div class="skill">
-            <p>CSS</p>
-            <div class="bar">
-              <div class="progress">advanced</div>
             </div>
           </div>
           <div class="skill">
@@ -173,15 +200,19 @@
           </div>
         </div>
       </div>
-      <hr />
+      <hr class="section-separator" />
 
       <!-- Projects -->
       <div class="projects" id="projects">
         <h2 class="section-header highlight">Projects</h2>
+        <!-- <div class="grid"> -->
         <div class="project">
           <h3>
-            <a href="projects/iqp/">Public Transit Research in Lyon, France</a>
+            <a href="https://github.com/AldenCutler/LyonE24"
+              >Public Transit Research in Lyon, France</a
+            >
           </h3>
+          <p>(link to come)</p>
           <div class="tags">
             <p class="tag">Python</p>
             <p class="tag">Numpy</p>
@@ -191,39 +222,160 @@
             <p class="tag">Data Visualization</p>
             <p class="tag">Database Management</p>
           </div>
+          <div class="text">
+            <p>
+              As part of a research project with my university, WPI, I spent the
+              summer of 2024 in Lyon, France researching the public transit
+              system. My team and I collected on the public transit system in
+              Lyon and used it to produce a report on the system's efficiency
+              and effectiveness. We developed visualizations of the data
+              collected. All the code used to visualize the data is written in
+              Python and will be available on my
+              <a href="https://github.com/AldenCutler/LyonE24">GitHub page</a>
+              once the project is complete and the repository is made public.
+              Additionally, once the project is complete, I will post a link to
+              the published paper <a href="#">here</a>.
+            </p>
+            <p>
+              As part of the project, I created an interactive map of the city
+              of Lyon. The city is divided into 59 "IRIS" zones, which are used
+              by the French government to collect demographic data. Each zone
+              represents an area with an average population of 2000 people, and
+              is color-coded based on the ratio of wheelchair-accessible transit
+              stops to total transit stops in the zone. This map is also
+              available
+              <a href="#">here</a>.
+            </p>
+            <p>
+              Another map I created as part of the project shows where outages
+              have occurred in the Lyon public transit system, overlayed on top
+              of the metro lines. From this visualization, we can see that
+              outages are more common at the intersections of metro lines and at
+              stops which are also regional train stops. This map is available
+              <a href="#">here</a>.
+            </p>
+          </div>
         </div>
+        <hr class="sep" />
         <div class="project">
-          <h3><a href="projects/chordstorm/">ChordStorm</a></h3>
+          <h3>
+            <a href="https://github.com/AldenCutler/ChordStorm" target="_blank"
+              >ChordStorm</a
+            >
+          </h3>
           <div class="tags">
             <p class="tag">Python</p>
             <p class="tag">Flask</p>
             <p class="tag">UI/UX</p>
             <p class="tag">App Design</p>
           </div>
+          <div class="text">
+            <p>
+              ChordStorm is a web app made for GoatHacks 2024 that recommends
+              music based on the current weather and your listening history. The
+              app was built using Flask for the backend, OpenAI's GPT API for
+              the music recommendations, and Spotify's API for the user's
+              listening history. If you'd like to see the code, you can find it
+              on my
+              <a
+                href="https://github.com/AldenCutler/ChordStorm"
+                target="_blank"
+                >GitHub</a
+              >. We're working on a way to deploy the app so that it can be used
+              by anyone, but for now, there is a demo video on the
+              <a
+                href="https://devpost.com/software/tunecast-e7n1hg"
+                target="_blank"
+                >Devpost page</a
+              >. If you have an OpenAI API key, you can also clone the repo and
+              run the app locally.
+            </p>
+          </div>
         </div>
+        <hr class="sep" />
         <div class="project">
-          <h3><a href="projects/minesweeper/">Minesweeper</a></h3>
+          <h3>
+            <a href="https://github.com/AldenCutler/minesweeper" target="_blank"
+              >Minesweeper</a
+            >
+          </h3>
           <div class="tags">
             <p class="tag">Python</p>
           </div>
+          <div class="text">
+            <p>
+              I'm a long-time fan of the game Minesweeper so while I was bored
+              over my school break, I decided to make my own version of the
+              game. I used Python and the Pygame library to make a complete
+              re-creation of the game, including chording. If you'd like to see
+              the code, you can find it on my
+              <a
+                href="https://github.com/AldenCutler/minesweeper"
+                target="_blank"
+                >GitHub</a
+              >.
+            </p>
+          </div>
         </div>
+        <hr class="sep" />
         <div class="project">
-          <h3><a href="projects/neuralnetwork/">Neural Network</a></h3>
+          <h3>
+            <a
+              href="https://github.com/AldenCutler/aldencutler.github.io/blob/main/assets/neural-network.ipynb"
+              >Neural Network</a
+            >
+          </h3>
           <div class="tags">
             <p class="tag">Python</p>
             <p class="tag">Numpy</p>
             <p class="tag">Pandas</p>
           </div>
+          <div class="text">
+            <p>
+              While I was home from school for the summer, I came across a
+              YouTube video describing how to create a neural network from
+              scratch using only Python and Numpy (no TensorFlow or
+              SciKit-Learn). I decided to give it a try and ended up creating a
+              neural network that could classify handwritten digits with around
+              85% accuracy on the MNIST dataset. If you'd like to see the code,
+              you can find it
+              <a
+                href="https://github.com/AldenCutler/aldencutler.github.io/blob/main/assets/neural-network.ipynb"
+                target="_blank"
+                >here</a
+              >.
+            </p>
+          </div>
         </div>
+        <hr class="sep" />
         <div class="project">
-          <h3><a href="projects/adventofcode/">Advent of Code</a></h3>
+          <h3>
+            <a href="https://github.com/AldenCutler/AdventOfCode"
+              >Advent of Code</a
+            >
+          </h3>
           <div class="tags">
             <p class="tag">Python</p>
             <p class="tag">C</p>
           </div>
+          <div class="text">
+            <p>
+              This past December (2023), I participated in my first Advent of
+              Code. I was introduced to the event by my Algorithms and Data
+              Structures professor and decided to give it a try. I used a
+              combination of Python and C to solve the problems. If you'd like
+              to see the code, you can find it on my
+              <a
+                href="https://github.com/AldenCutler/AdventOfCode"
+                target="_blank"
+                >GitHub</a
+              >.
+            </p>
+          </div>
+          <!-- </div> -->
         </div>
       </div>
-      <hr />
+      <hr class="section-separator" />
 
       <!-- Education -->
       <div class="education" id="education">
@@ -231,35 +383,67 @@
         <div class="grid">
           <div>
             <h3>Worcester Polytechnic Institute</h3>
-            <p>
-              I'm currently a student at Worcester Polytechnic Institute
-              studying Computer Science. I'm in my sophomore year and will be
-              graduating in 2026. At WPI, I have experience in C, C++, Java,
-              Python, and HTML/CSS/JS/React.
+            <p class="text">
+              I am currently a student at Worcester Polytechnic Institute
+              studying Computer Science. I am starting my junior year in the
+              fall and will be graduating in May of 2026 with a combined
+              Bachelor's and Master's Degree in Computer Science.
             </p>
           </div>
           <div class="school">
             <h3>Seattle Academy of Arts and Sciences</h3>
-            <p>
+            <p class="text">
               I graduated from Seattle Academy in 2022. While I was there, I
               took a variety of classes including Honors Calculus (AB and BC),
-              Honors Physics, Honors Chemistry, Honors Physics and Honors
-              Biology.
+              Honors Statistics, Honors Physics, Honors Chemistry, Honors
+              Physics and Honors Biology.
             </p>
           </div>
         </div>
       </div>
-      <hr />
+      <hr class="section-separator" />
 
-      <!-- Contact Me -->
-      <div class="contact-me" id="contact">
-        <h2 class="section-header highlight">Contact Me</h2>
-        <p>
-          If you'd like to get in touch with me, you can reach me via email
-          <a href="mailto:aldencutler84@gmail.com">here</a>, or you can find me
-          on LinkedIn
-          <a href="https://www.linkedin.com/in/aldencutler/">here</a>.
-        </p>
+      <!-- Awards -->
+      <div class="awards" id="awards">
+        <h2 class="section-header highlight">Awards</h2>
+        <div class="grid">
+          <div class="award">
+            <h3 class="award-name">
+              2nd Place - National CyberPatriot Competition
+            </h3>
+            <p class="text">
+              CyberPatriot is a national cybersecurity competition organized by
+              the Air Force Association. My team and I placed 1st in the state
+              of Washington and 2nd in the nation in the Open Division Silver
+              Tier in the 2021-2022 competition.
+            </p>
+          </div>
+          <div class="award">
+            <h3 class="award-name">Winner - GoatHacks 2024 Hackathon</h3>
+            <p class="text">
+              My team and I won the GoatHacks 2024 Hackathon Best Rookie Award
+              with our project ChordStorm. For more information on the project,
+              see the Projects section above.
+            </p>
+          </div>
+          <div class="award">
+            <h3 class="award-name">
+              2nd Place - Oregon State FRC Event (2022)
+            </h3>
+            <p class="text">
+              My team and I placed 2nd at the Oregon State FRC Event in 2022. We
+              were the alliance captain of the 2nd place alliance.
+            </p>
+          </div>
+          <div class="award">
+            <h3 class="award-name">Dean's List</h3>
+            <p class="text">
+              I made the Dean's List at WPI for the 2023-2024 academic year. I
+              was recognized for my academic achievements and maintaining a GPA
+              of 3.5 or higher.
+            </p>
+          </div>
+        </div>
       </div>
 
       <!-- End Content Div -->

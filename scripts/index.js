@@ -54,10 +54,15 @@ if (mobileCheck()) {
 
     });
 
+    const separators = document.querySelectorAll('.sep');
+    separators.forEach((s) => {
+        s.style.display = 'none';
+    });
+
 } else {
     document.getElementById('burger').remove();
 
-    document.body.style.lineHeight = '1.5rem';
+    // document.body.style.lineHeight = '1.5rem';
 
     // // center nav bar
     const nav = document.querySelector('.nav-links');
@@ -70,7 +75,7 @@ if (mobileCheck()) {
     header.style.marginTop = '5rem';
     header.style.textAlign = 'center';
     document.querySelector('.name').style.fontSize = '3rem';
-    document.querySelector('.tag').style.fontSize = '1.5rem';
+    document.querySelector('.tagline').style.fontSize = '1.5rem';
 
     // center about me section
     const about = document.querySelector('.about-me');
@@ -83,11 +88,12 @@ if (mobileCheck()) {
     socials.style.width = '25%';
     socials.style.marginBottom = '1rem';
 
-    const text = document.querySelectorAll('.text');
+    const text = document.querySelectorAll('.about-text');
     text.forEach((t) => {
         t.style.width = '50%';
         t.style.margin = 'auto';
         t.style.padding = '1rem 0';
+        t.style.lineHeight = '1.5rem';
     });
 
     // center skills section
@@ -102,10 +108,26 @@ if (mobileCheck()) {
     projects.style.width = '75%';
     projects.style.margin = 'auto';
     projects.style.textAlign = 'center';
+    projects.style.paddingTop = '3rem';
+    projects.style.paddingBottom = '3rem';
 
     const education = document.querySelector('.education');
     education.style.width = '75%';
     education.style.margin = 'auto';
+    education.style.paddingTop = '3rem';
+    education.style.paddingBottom = '3rem';
+
+    const awards = document.querySelector('.awards');
+    awards.style.width = '75%';
+    awards.style.margin = 'auto';
+    awards.style.paddingTop = '3rem';
+    awards.style.paddingBottom = '3rem';
+
+    const experience = document.querySelector('.experience');
+    experience.style.width = '75%';
+    experience.style.margin = 'auto';
+    experience.style.paddingTop = '3rem';
+    experience.style.paddingBottom = '3rem';
 
     const grid = document.querySelectorAll('.grid');
     grid.forEach((g) => {

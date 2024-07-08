@@ -16,11 +16,15 @@ a {
   color: inherit;
 }
 
+/* p {
+  line-height: 1.5rem;
+} */
+
 ul {
   list-style-type: none;
 }
 
-hr {
+.section-separator {
   border: 0;
   height: 1px;
   background-color: var(--bg-accent);
@@ -124,6 +128,44 @@ nav {
   /* color: var(--text-accent) */
 }
 
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 10px 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .highlight {
+    margin: auto;
+    font-size: 2.5rem;
+  }
+
+  .project .text {
+    width: 75%;
+    margin:auto;
+    line-height: 1.75rem;
+  }
+
+  .text {
+    line-height: 1.75rem;
+  }
+
+  .job {
+    margin: auto;
+    text-align: center;
+    /* width: 50%; */
+  }
+}
+
+.job .company {
+  color: var(--text-accent); 
+}
+
+.job .dates {
+  font-style: italic;
+}
+
 .skills {
   display: flex;
   flex-direction: column;
@@ -189,6 +231,12 @@ nav {
   padding: 10px 20px;
 }
 
+.projects hr {
+  border: 0.5px solid var(--text);
+  opacity: 0.5;
+  width: 20%;
+}
+
 .projects a {
   text-decoration: underline;
   color: var(--text-accent);
@@ -197,6 +245,18 @@ nav {
 .project h3 a {
   color: var(--text);
   text-decoration: underline;
+}
+
+
+@media screen and (max-width: 768px) {
+  .project .text {
+    width: 75%;
+    margin:auto;
+    line-height: 1.5rem;
+  }
+  .project .text {
+    width: 100%;
+  }
 }
 
 .tags {
@@ -250,6 +310,24 @@ nav {
   flex-direction: column;
   align-items: left;
   padding: 10px 20px;
+}
+
+.awards {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 10px 20px;
+}
+
+.award p {
+  line-height: 1.5rem;    
+}
+
+@media screen and (max-width: 768px){
+  .award {
+    padding-bottom: 1rem;
+  }
+
 }
 
 .school {
