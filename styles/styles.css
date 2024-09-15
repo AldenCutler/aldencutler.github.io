@@ -42,6 +42,7 @@ html {
   position: relative;
   left: 0;
   top: 0;
+  scroll-behavior: smooth;
 }
 
 /* Navigation Bar */
@@ -142,8 +143,9 @@ nav {
   }
 
   .project .text {
-    width: 75%;
+    /* width: 75%; */
     margin:auto;
+    text-align: left;
     line-height: 1.75rem;
   }
 
@@ -310,6 +312,11 @@ nav {
   flex-direction: column;
   align-items: left;
   padding: 10px 20px;
+}
+
+.education a {
+  text-decoration: underline;
+  color: var(--text-accent);
 }
 
 .awards {
