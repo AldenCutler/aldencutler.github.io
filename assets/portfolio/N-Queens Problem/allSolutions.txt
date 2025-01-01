@@ -1,0 +1,16 @@
+Counting the number of solutions for n = 4...20:
+  -------------------------------------------
+  Number of solutions for n = 4: 2
+  Number of solutions for n = 5: 10
+  Number of solutions for n = 6: 4
+  Number of solutions for n = 7: 40
+  Number of solutions for n = 8: 92
+  Number of solutions for n = 9: 352
+  Number of solutions for n = 10: 724
+  Number of solutions for n = 11: 2680
+  Number of solutions for n = 12: 14200
+  Number of solutions for n = 13: 73712
+  Number of solutions for n = 14: 365596
+  Number of solutions for n = 15: 2279184
+  Number of solutions for n = 16: 14772512
+  Number of solutions for n = 17: 95815104

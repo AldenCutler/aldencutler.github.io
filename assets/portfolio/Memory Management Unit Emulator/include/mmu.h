@@ -1,0 +1,11 @@
+void exit_memsim();
+int  get_next_free_page(int pid);
+int  get_next_free_page_disk();
+int  swap(int mem_page, int disk_page);
+int  find_ptable(int pid);
+int  update_ptable_entry(int pid, int frame, int disk_page);
+int  find_ptable_entry(int pid, int v_addr);
+int  evict(int pid);
+int  map(unsigned char pid, unsigned char v_addr, unsigned char value);
+int  store(unsigned char pid, unsigned char v_addr, unsigned char value);
+int  load(unsigned char pid, unsigned char v_addr);

@@ -1,0 +1,151 @@
+Script started on 2024-02-18 17:55:29+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="78" LINES="78"]
+student@cs2324:~/CS3013/project3/src$ ./project3 < test/sampleInput.txt
+Welcome to the Virtual Memory Manager
+-------------------------------------
+
+Instruction?
+
+Put page table for PID 0 into physical frame 0
+Mapped virtual address 0 (page 0) into physical frame 1
+
+Instruction?
+
+ERROR: virtual page 0 already mapped with rw_bit = 1
+
+Instruction?
+
+Mapped virtual address 16 (page 1) into physical frame 2
+
+Instruction?
+
+Mapped virtual address 32 (page 2) into physical frame 3
+
+Instruction?
+
+The physical frame 3 is not writable
+
+Instruction?
+
+Stored value 255 at virtual address 19 (physical address 35)
+
+Instruction?
+
+The value 255 is virtual address 19 (physical address 35)
+
+Instruction?
+
+Evicted memory page 1 out to disk page 0
+Put page table for PID 1 into physical frame 1
+Evicted memory page 2 out to disk page 1
+Mapped virtual address 19 (page 1) into physical frame 2
+
+Instruction?
+
+Evicted memory page 3 out to disk page 2
+Mapped virtual address 5 (page 0) into physical frame 3
+
+Instruction?
+
+Evicted memory page 0 out to disk page 3
+Put page table for PID 2 into physical frame 0
+Evicted memory page 1 out to disk page 4
+Mapped virtual address 63 (page 3) into physical frame 1
+
+Instruction?
+
+Evicted memory page 2 out to disk page 5
+Swapped disk page 4 to memory page 2
+Stored value 158 at virtual address 5 (physical address 53)
+
+Instruction?
+
+The value 158 is virtual address 5 (physical address 53)
+
+Instruction?
+
+Evicted memory page 3 out to disk page 4
+Swapped disk page 3 to memory page 3
+Evicted memory page 0 out to disk page 3
+The value 255 is virtual address 19 (physical address 3)
+
+Instruction?
+
+Evicted memory page 1 out to disk page 1
+Swapped disk page 3 to memory page 1
+Evicted memory page 2 out to disk page 3
+Stored value 1 at virtual address 48 (physical address 32)
+
+Instruction?
+
+Evicted memory page 3 out to disk page 1
+Put page table for PID 3 into physical frame 3
+Evicted memory page 0 out to disk page 6
+Mapped virtual address 32 (page 2) into physical frame 0
+
+Instruction?
+
+Evicted memory page 1 out to disk page 7
+Swapped disk page 3 to memory page 1
+Evicted memory page 2 out to disk page 3
+Stored value 15 at virtual address 7 (physical address 39)
+
+Instruction?
+
+Stored value 206 at virtual address 40 (physical address 8)
+
+Instruction?
+
+The value 15 is virtual address 7 (physical address 39)
+
+Instruction?
+
+The value 206 is virtual address 40 (physical address 8)
+
+Instruction? End of file.
+student@cs2324:~/CS3013/project3/src$ ./project3 < test/sampleInput.txt
+Welcome to the Virtual Memory Manager
+-------------------------------------
+
+Instruction?
+
+Put page table for PID 0 into physical frame 0
+Mapped virtual address 0 (page 0) into physical frame 1
+
+Instruction?
+
+No mapping for process 0 virtual address 16
+
+Instruction?
+
+Invalid instruction, value can only be NA for load.
+
+Instruction?
+
+ERROR: virtual page 0 already mapped with rw_bit = 0
+
+Instruction?
+
+No mapping for process 0 virtual address 48
+
+Instruction?
+
+The physical frame 1 is not writable
+
+Instruction?
+
+Invalid instruction, instruction can only be map/store/load.
+
+Instruction?
+
+Evicted memory page 1 out to disk page 0
+Mapped virtual address 16 (page 1) into physical frame 1
+
+Instruction?
+
+Invalid instruction, value must be between 0 and 255.
+
+Instruction? End of file.
+student@cs2324:~/CS3013/project3/src$ exit
+exit
+
+Script done on 2024-02-18 17:55:51+00:00 [COMMAND_EXIT_CODE="0"]

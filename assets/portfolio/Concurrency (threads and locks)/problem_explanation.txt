@@ -1,0 +1,14 @@
+Our code has a system that provides fair and equal opportunities for baseball, football, and rugby teams to play on a single field. 
+
+Each baseball game requires a full team of 36 players, but only 18 players are necessary to play. 
+Similarly, each football game requires a full team of 44 players, but only 22 players are required to play. 
+For rugby, the full team consists of 60 players, but only 2-30 players are required to play, and they must join in pairs, adding up to 15 pairs (30 players). 
+
+The program checks if enough players of their sport are ready, and if not, they wait until there are enough players to start the game. 
+We implemented a condition variable to signal the players accordingly. 
+
+To ensure each sport had a fair participation opportunity, we used mutex locks and condition variables to synchronize access and signaling and prevent thread starvation.
+Also, to ensure that rugby games do not go on forever, we implemented a mechanism where the thread that starts the game will choose a specific game time. When that time is up, it will signal that the game is over, removing all players from the field. 
+This ensures that all players get a fair chance to play because rugby games have a hard limit to how long they can last.
+
+We carefully coordinated multiple loops and game-over signaling to create an inclusive simulation for the Worcester Gompei Park.
