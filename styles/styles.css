@@ -331,6 +331,78 @@ nav {
   line-height: 1.5rem;    
 }
 
+.modal-button {
+  background-color: var(--border);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.modal-text {
+  display: none;
+  padding: 1rem;
+  border: 1px solid var(--border-accent);
+  border-radius: 5px;
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 1rem;
+}
+
+.modal-content {
+  padding: 1rem;
+  border: 1px solid var(--border-accent);
+  border-radius: 5px;
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 1rem;
+  z-index: 2;
+
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  /* height: 80%; */
+}
+
+.modal-background {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.close-button {
+  background-color: var(--bg-accent);
+  color: var(--text);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin: 1rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+@media screen and (max-width: 768px) {
+  /* On mobile devices, set height of project-links to min-content */
+  .project-links {
+    height: min-content;
+  }
+
+  /* Hide modal info buttons */
+  .modal-button {
+    display: none;
+  }
+
+  /* Show modal text as regular text */
+  .modal-text {
+    display: block;
+  }
+}
+
 @media screen and (max-width: 768px){
   .award {
     padding-bottom: 1rem;
@@ -358,6 +430,7 @@ nav {
   color: var(--text-accent);
 }
 
+/* Dark Color Scheme */
 @media (prefers-color-scheme: dark) {
 
   :root {

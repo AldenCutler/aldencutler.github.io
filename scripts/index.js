@@ -114,12 +114,17 @@ if (mobileCheck()) {
   skills.style.padding = "1rem 0";
   skills.style.paddingTop = "3rem";
 
-  const projects = document.querySelector(".projects");
-  projects.style.width = "60%";
-  projects.style.margin = "auto";
-  projects.style.textAlign = "center";
-  projects.style.paddingTop = "3rem";
-  projects.style.paddingBottom = "3rem";
+  const projectsSection = document.querySelector(".projects");
+  projectsSection.style.width = "60%";
+  projectsSection.style.margin = "auto";
+  projectsSection.style.textAlign = "center";
+  projectsSection.style.paddingTop = "3rem";
+  projectsSection.style.paddingBottom = "3rem";
+
+  const projects = document.querySelectorAll(".project");
+  projects.forEach((p) => {
+    p.style.padding = "0 2rem";
+  });
 
   const education = document.querySelector(".education");
   education.style.width = "60%";
@@ -158,6 +163,37 @@ if (mobileCheck()) {
   });
 
   document.querySelector(".school").style.marginTop = "0";
+
+
+  // add modal functionality
+  const modalButtons = document.querySelectorAll(".modal-button");
+  modalButtons.forEach((button) => {
+    const modalText = document.getElementById(button.id + "-modal").innerHTML;
+    // console.log(modalText);
+
+    button.addEventListener("click", () => {
+      const modal = document.createElement("div");
+      const background = document.createElement("div");
+      modal.classList.add("modal");
+      modal.innerHTML = `
+      <div class="modal-content">
+        <span class="close-button" alt="Close">&times;</span>
+        <p style="margin-top:2rem;">${modalText}</p>
+      </div>
+      `;
+
+      background.classList.add("modal-background");
+      document.body.appendChild(background);
+      projects.appendChild(modal);
+
+      const closeButton = document.querySelector(".close-button");
+      closeButton.addEventListener("click", () => {
+        modal.remove();
+        background.remove();
+      });
+    });
+  });
+
 }
 
 if (mobileCheck()) {
