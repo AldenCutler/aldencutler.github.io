@@ -121,8 +121,8 @@ if (mobileCheck()) {
   projectsSection.style.paddingTop = "3rem";
   projectsSection.style.paddingBottom = "3rem";
 
-  const projects = document.querySelectorAll(".project");
-  projects.forEach((p) => {
+  let projects1 = document.querySelectorAll(".project");
+  projects1.forEach((p) => {
     p.style.padding = "0 2rem";
   });
 
