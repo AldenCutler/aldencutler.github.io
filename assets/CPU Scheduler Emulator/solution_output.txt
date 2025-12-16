@@ -1,0 +1,100 @@
+Script started on 2024-02-27 17:20:08+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="190" LINES="51"]
+student@cs2324:~/CS3013/project4$ cat 2.in
+3
+10
+16
+15
+15
+9
+17
+11
+2
+10
+student@cs2324:~/CS3013/project4$ ./scheduler fifo 2.in 0
+Execution trace with FIFO:
+Job 0 ran for: 3
+Job 1 ran for: 10
+Job 2 ran for: 16
+Job 3 ran for: 15
+Job 4 ran for: 15
+Job 5 ran for: 9
+Job 6 ran for: 17
+Job 7 ran for: 11
+Job 8 ran for: 2
+Job 9 ran for: 10
+End of execution with FIFO.
+Begin analyzing FIFO:
+Job 0 -- Response time: 0  Turnaround time: 3  Wait time: 0
+Job 1 -- Response time: 3  Turnaround time: 13	Wait time: 3
+Job 2 -- Response time: 13  Turnaround time: 29	 Wait time: 13
+Job 3 -- Response time: 29  Turnaround time: 44	 Wait time: 29
+Job 4 -- Response time: 44  Turnaround time: 59	 Wait time: 44
+Job 5 -- Response time: 59  Turnaround time: 68	 Wait time: 59
+Job 6 -- Response time: 68  Turnaround time: 85	 Wait time: 68
+Job 7 -- Response time: 85  Turnaround time: 96	 Wait time: 85
+Job 8 -- Response time: 96  Turnaround time: 98	 Wait time: 96
+Job 9 -- Response time: 98  Turnaround time: 108  Wait time: 98
+Average -- Response time: 49.50	 Turnaround time: 60.30	 Wait time: 49.50
+End analyzing FIFO.
+student@cs2324:~/CS3013/project4$ ./scheduler sjf 2.in 0
+Execution trace with SJF:
+Job 8 ran for: 2
+Job 0 ran for: 3
+Job 5 ran for: 9
+Job 1 ran for: 10
+Job 9 ran for: 10
+Job 7 ran for: 11
+Job 3 ran for: 15
+Job 4 ran for: 15
+Job 2 ran for: 16
+Job 6 ran for: 17
+End of execution with SJF.
+Begin analyzing SJF:
+Job 8 -- Response time: 0  Turnaround time: 2  Wait time: 0
+Job 0 -- Response time: 2  Turnaround time: 5  Wait time: 2
+Job 5 -- Response time: 5  Turnaround time: 14	Wait time: 5
+Job 1 -- Response time: 14  Turnaround time: 24	 Wait time: 14
+Job 9 -- Response time: 24  Turnaround time: 34	 Wait time: 24
+Job 7 -- Response time: 34  Turnaround time: 45	 Wait time: 34
+Job 3 -- Response time: 45  Turnaround time: 60	 Wait time: 45
+Job 4 -- Response time: 60  Turnaround time: 75	 Wait time: 60
+Job 2 -- Response time: 75  Turnaround time: 91	 Wait time: 75
+Job 6 -- Response time: 91  Turnaround time: 108  Wait time: 91
+Average -- Response time: 35.00	 Turnaround time: 45.80	 Wait time: 35.00
+End analyzing SJF.
+student@cs2324:~/CS3013/project4$ ./scheduler rr 2.in 9
+Execution trace with RR:
+Job 0 ran for: 3
+Job 1 ran for: 9
+Job 2 ran for: 9
+Job 3 ran for: 9
+Job 4 ran for: 9
+Job 5 ran for: 9
+Job 6 ran for: 9
+Job 7 ran for: 9
+Job 8 ran for: 2
+Job 9 ran for: 9
+Job 1 ran for: 1
+Job 2 ran for: 7
+Job 3 ran for: 6
+Job 4 ran for: 6
+Job 6 ran for: 8
+Job 7 ran for: 2
+Job 9 ran for: 1
+End of execution with RR.
+Begin analyzing RR:
+Job 0 -- Response time: 0  Turnaround time: 3  Wait time: 0
+Job 1 -- Response time: 3  Turnaround time: 78	Wait time: 68
+Job 2 -- Response time: 12  Turnaround time: 85	 Wait time: 69
+Job 3 -- Response time: 21  Turnaround time: 91	 Wait time: 76
+Job 4 -- Response time: 30  Turnaround time: 97	 Wait time: 82
+Job 5 -- Response time: 39  Turnaround time: 48	 Wait time: 39
+Job 6 -- Response time: 48  Turnaround time: 105  Wait time: 88
+Job 7 -- Response time: 57  Turnaround time: 107  Wait time: 96
+Job 8 -- Response time: 66  Turnaround time: 68	 Wait time: 66
+Job 9 -- Response time: 68  Turnaround time: 108  Wait time: 98
+Average -- Response time: 34.40	 Turnaround time: 79.00	 Wait time: 68.20
+student@cs2324:~/CS3013/project4$ exit
+exit
+
+Script done on 2024-02-27 17:20:42+00:00 [COMMAND_EXIT_CODE="0"]
