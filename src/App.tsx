@@ -89,6 +89,20 @@ export default function Portfolio() {
       tech: ["Python", "SQLite3", "Pandas", "Matplotlib"],
     },
     {
+      name: "Passive Operating System Fingerprinting",
+      description:
+        "Developed a Python-based tool to identify operating systems using passive network traffic analysis. " + 
+        "Utilized p0f to identify operating systems and trained a random forest classifier for improved accuracy.",
+      links: [
+        {
+          name: "GitHub Repository",
+          href: "https://github.com/AldenCutler/CS513FinalProject",
+          icon: Github,
+        },
+      ],
+      tech: ["Python", "Pyshark", "p0f", "Scikit-learn"],
+    },
+    {
       name: "ChordStorm",
       description:
         "Music recommendation web app that suggests songs based on weather and listening history using GPT-4 and Spotify's API.",
