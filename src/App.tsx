@@ -442,7 +442,7 @@ export default function Portfolio() {
       {/* Footer */}
       <footer className="border-t border-cyan-500/30 bg-gray-900/80 backdrop-blur-sm py-8">
         <div className="max-w-6xl mx-auto px-6 text-center text-gray-400 font-mono">
-          <p>© 2024 Your Name. Built with React & Tailwind CSS.</p>
+          <p>© 2026 Alden Cutler.</p>
         </div>
       </footer>
     </div>
