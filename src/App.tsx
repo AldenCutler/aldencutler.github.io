@@ -27,6 +27,26 @@ export default function Portfolio() {
 
   const experience = [
     {
+      title: "Product Security Engineer",
+      company: "Tesla",
+      period: "June 2026 - Present",
+      description: [
+        "Returning to Tesla after graduation to work on software and product security.",
+      ],
+    },
+    {
+      title: "Major Qualifying Project",
+      company: "Worcester Polytechnic Institute & Microsoft",
+      period: "August 2025 - March 2026",
+      description: [
+        "Built a domain-specialized Microsoft Intune chatbot by optimizing a RAG pipeline with hybrid retrieval (semantic embeddings + BM25/RRF in PostgreSQL/PGVector).",
+        "Engineered agent-based quality controls, including context sufficiency and response review loops.",
+        "Deployed as an OpenAI-compatible FastAPI service with citation-aware responses and streaming.",
+        "Evaluated the pipeline against baseline RAG variants using Azure AI Evaluation for groundedness, relevance, and retrieval quality.",
+        "Co-authored a released capstone report on trustworthy, domain-specific question answering, including methodology, tradeoffs, and future improvements.",
+      ],
+    },
+    {
       title: "Software Engineer Intern",
       company: "Tesla",
       period: "May 2025 - August 2025",
@@ -201,10 +221,10 @@ export default function Portfolio() {
               Alden Cutler
             </h1>
             <p className="text-2xl text-cyan-300 mb-4 font-mono">
-              Software Engineer & Security Engineer
+              Product Security Engineer at Tesla
             </p>
             <p className="text-gray-400 max-w-2xl mb-8">
-              Building reliable, secure software at the intersection of systems, security, and real-world engineering. Experienced in systems programming, cybersecurity analysis, and full-stack software development.
+              Recent Worcester Polytechnic Institute graduate building reliable, secure software at the intersection of systems, security, and real-world engineering. Returning to Tesla as a Product Security Engineer after experience in systems programming, cybersecurity analysis, and full-stack software development.
             </p>
             <div className="flex gap-4">
               <a
@@ -253,12 +273,13 @@ export default function Portfolio() {
           </h2>
           <div className="bg-gray-800/50 border border-cyan-500/30 rounded-lg p-8 backdrop-blur-sm">
             <p className="text-gray-300 leading-relaxed mb-4">
-              I'm Alden Cutler, a computer science student in a combined
-              Bachelor's/Master's program with a focus on cybersecurity and a
-              minor in data science. I have hands-on experience from internships
-              and projects spanning cybersecurity, systems programming, and
-              software development, including work with Boeing and research
-              abroad in Lyon.
+              I'm Alden Cutler, a recent computer science graduate with both a BS and an MS from
+              Worcester Polytechnic Institute with a focus on cybersecurity and
+              a minor in data science. I have hands-on experience from
+              internships and projects spanning cybersecurity, systems
+              programming, and software development, including work with Boeing and Tesla,
+              a Microsoft major qualifying project, and research abroad in
+              Lyon.
             </p>
             <p className="text-gray-300 leading-relaxed">
               I enjoy building practical, well-engineered
